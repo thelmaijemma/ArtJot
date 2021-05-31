@@ -1,0 +1,34 @@
+body{
+    background:rgb(9, 3, 24);
+    color: aliceblue;
+}
+
+p {
+    margin: 10px 0 !important;
+}
+
+.login{
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+    color: navy;
+}
+
+.input-field input{
+    color: aliceblue;
+}
+
+
+.input-field textarea{
+    color: rgb(235, 8, 95);
+}
+
+nav{
+    background-color: rgb(20, 10, 44);
+}
+
+.card{
+    color: black;
+}
+
+
