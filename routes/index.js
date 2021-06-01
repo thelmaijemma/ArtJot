@@ -10,6 +10,7 @@ const Jot = require('../models/jot')
 router.get('/', ensureGuest, (req, res) => {
     //res.send('Login')
     // this is html
+
     res.render('login', {
         layout: 'login',
     })

@@ -6,13 +6,14 @@ const Jot = require('../models/jot')
 
 
 // @desc Show all jots
-// @route GET /jots/add
+// @route GET /jots
+// .lean() to pass into template
 router.get('/', ensureAuth, async (req, res) => {
     try{
         const jots = await Jot.find({ status: 'public'})
             .populate('user')
             .sort({ createdAt: 'desc' })
-            .lean() // to pass into template
+            .lean() 
 
             res.render('jots/index', {
                 jots,
