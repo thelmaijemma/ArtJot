@@ -2,7 +2,14 @@ const express = require('express')
 const router = express.Router()
 const { ensureAuth } = require('../middleware/auth')
 
-const Jot = require('../models/jot')
+const Jot = require('../models/jot.js')
+
+// @desc Show add page
+// @route GET /jots/add
+router.get('/add', ensureAuth, (req, res) => {
+    res.render('jots/add')
+}) 
+
 
 
 // @desc Show all jots
@@ -45,18 +52,13 @@ router.get('/:id', ensureAuth, async (req, res) => {
     }
 })
 
-// @desc Show add page
-// @route GET /jots/add
-router.get('/add', ensureAuth, (req, res) => {
-    res.render('jots/add')
-}) 
 
 
 // @desc Process add form
 // @route POST /stories
 router.post('/', ensureAuth, async (req, res) => {
     try{
-        req.body.user = req.user.id
+        req.body.user = 'req.user.id'
         await Jot.create(req.body)
         res.redirect('/dashboard')
     } catch (err) {

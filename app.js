@@ -44,10 +44,9 @@ app.use(methodOverride (function (req, res) {
 if (process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
-/*
+
 // Handlebar Helpers
 const { formatDate, stripTags, truncate, editIcon, select } = require('./helpers/hbs')
-
 // Handlebars
 app.engine('.hbs', exphbs({
     helpers: {
@@ -59,7 +58,7 @@ app.engine('.hbs', exphbs({
 },
 defaultLayout: 'main', extname: '.hbs'}))
 app.set('view engine', '.hbs')
-*/
+
 
 // Sessions Middleware
 // must be above passport middleware
