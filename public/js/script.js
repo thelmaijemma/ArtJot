@@ -36,7 +36,7 @@ function getArtPic(id){
     <input type="submit" value="Save" class="btn pink">
     <a href="/dashboard" class="btn yellow">Cancel</a>`);
     $('#one')
-    .html(`<p>Art Loaded, You Can Search Again Before Saving</p>`)
+    .append(`<p>Art Loaded, You Can Search Again Before Saving</p>`)
   }
     );
 }
