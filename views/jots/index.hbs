@@ -1,7 +1,7 @@
 <h1>Jots</h1>
 <div class="row">
     {{#each jots}}
-        <div class="col s12 m4">
+        <div class="col s4 m4 marginmore">
             <div class="card amber lighten-3">
                 <div class="card-image">
                     {{{editIcon user ../user _id}}}
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="card-action center-align">
-                    <a href="/jots/{{_id}}" class="btn">Read More</a>
+                    <a href="/jots/{{_id}}" class="btn-large">More</a>
                 </div>
             </div>
         </div>
