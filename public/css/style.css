@@ -7,12 +7,55 @@ p {
     margin: 10px 0 !important;
 }
 
-.login{
-    width: 400px;
-    margin-top: 50px;
-    text-align: center;
-    color: navy;
+/*
+FONTS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.padmore{
+    padding-bottom: 1rem;
 }
+
+@media only screen and (max-width: 400px) {
+    .mobile-login {
+      font-size: small;
+    }
+    .long{
+        width: 90%;
+    }
+  }
+
+.chip{
+    background-color: #64921b;
+}
+
+.chip a{
+    color: rgb(250, 246, 246);
+}
+.row-login{
+    margin: auto;
+    width: 70%;
+    margin-top: 30px;
+    padding-bottom: 2rem;
+}
+
+.login-title{
+    color: white;
+    padding-top: 3rem;
+    font-size: xx-large;
+}
+
+.card{
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.login-image{
+    margin: auto;
+}
+
 
 .input-field input{
     color: aliceblue;
@@ -21,14 +64,46 @@ p {
 
 .input-field textarea{
     color: rgb(235, 8, 95);
+    height: 300px;
+    font-size: x-large;
 }
 
 nav{
     background-color: rgb(20, 10, 44);
 }
 
+h3{
+    text-align: center;
+}
+
+.yellow{
+    color: rgb(25, 13, 66);
+}
+
 .card{
     color: black;
 }
 
+.story{
+    background-color: rgb(152, 64, 64);
+}
+
+.story-body{
+    font-size: x-large;
+}
+
+.author-box{
+    background-color: #004d40 !important;
+}
+
+.big-author{
+    background-color: #00695c;
+}
+
+
+.show{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 

@@ -58,7 +58,7 @@ router.get('/:id', ensureAuth, async (req, res) => {
 // @route POST /stories
 router.post('/', ensureAuth, async (req, res) => {
     try{
-        req.body.user = 'req.user.id'
+        req.body.user = req.user.id
         await Jot.create(req.body)
         res.redirect('/dashboard')
     } catch (err) {

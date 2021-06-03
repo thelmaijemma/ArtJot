@@ -1,22 +1,23 @@
-<div class="row">
+<div class="row show">
     <div class="col s12 m8">
         <h3>{{jot.title}}
             <small>{{{editIcon jot.user user jot._id false}}}</small>
         </h3>
         <div class="card story">
-            <div class="card-content">
+            <div class="card-content story-body">
                 <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
-                {{{jot.body}}}
+                 <img src="{{jot.primaryImage}}" alt="a custom art piece" width="80%">
+               <p> {{{jot.body}}} </p>
             </div>
         </div>
     </div>
     <div class="col s12 m4">
         <div class="card center-align">
-            <div class="card-content">
+            <div class="card-content big-author">
                 <span class="card-title">{{jot.user.displayName}}</span>
                 <img src="{{jot.user.image}}" class="circle responsive-img img-small">
             </div>
-            <div class="card-action">
+            <div class="card-action author-box">
                 <a href="/jots/user/{{jot.user._id}}">More from {{jot.user.firstName}}</a>
             </div>
         </div>

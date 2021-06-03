@@ -10,6 +10,9 @@ const JotSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    primaryImage: {
+        type: String
+    },
     status: {
         type: String,
         required: true,
