@@ -20,13 +20,13 @@
                     <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
                     <td><span class="dash-status">{{status}}</span></td>
                     <td>
-                        <a href="/jots/edit/{{_id}}" class="btn btn-float">
+                        <a href="/jots/edit/{{_id}}" class="btn btn-float deep-purple accent-2">
                         <i class="fas fa-edit"></i>
                         </a>
 
                         <form action="/jots/{{_id}}" method="POST" id="delete-form">
                             <input type="hidden" name="_method" value="DELETE">
-                            <button type="submit" class="btn red">
+                            <button type="submit" class="btn pink accent-1">
                                 <i class="fas fa-trash"></i>
                             </button>
                         </form>
@@ -35,6 +35,7 @@
             {{/each}}
         </tbody>
     </table>
+    <a href="/jots" class="waves-effect waves-light btn-small pink darken-14">Check Out Our Community Jots</a>
 {{else}}
 <p>You have not created anything</p>
 <a href="/jots" class="waves-effect waves-light btn-small pink darken-14">Check Out Our Community Jots</a>
