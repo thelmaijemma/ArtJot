@@ -45,11 +45,6 @@ FONTS
     padding-bottom: 2rem;
 }
 
-.login-title{
-    color: white;
-    padding-top: 3rem;
-    font-size: x-large;
-}
 
 .card{
   margin: auto;
@@ -59,6 +54,11 @@ FONTS
 
 .login-image{
     margin: auto;
+}
+
+.login-card{
+    background-color: rgba(9, 3, 24, 0.571);
+    color: rgb(252, 246, 252);
 }
 
 
