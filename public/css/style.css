@@ -32,11 +32,11 @@ FONTS
 
 
 .chip{
-    background-color: #64921b;
+    background-color: #aeb4a4;
 }
 
 .chip a{
-    color: rgb(250, 246, 246);
+    color: rgb(41, 38, 38);
 }
 .row-login{
     margin: auto;
@@ -85,12 +85,17 @@ h3{
     color: rgb(25, 13, 66);
 }
 
+
+
+
+
+
 .card{
-    color: black;
+  color: black;
 }
 
 .story{
-    background-color: rgb(152, 64, 64);
+    background-color: rgb(67, 68, 87);
 }
 
 .story-body{
@@ -98,11 +103,15 @@ h3{
 }
 
 .author-box{
-    background-color: #004d40 !important;
+    background-color: rgb(100, 101, 119) !important;
+}
+
+.author-box a{
+    color: rgb(220, 221, 228) !important;
 }
 
 .big-author{
-    background-color: #00695c;
+    background-color: rgb(67, 68, 87);;
 }
 
 
